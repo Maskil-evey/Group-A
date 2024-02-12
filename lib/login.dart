@@ -7,7 +7,7 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[50],
+      backgroundColor: Colors.grey[100],
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(
@@ -16,10 +16,10 @@ class LoginView extends StatelessWidget {
             children: [
               Text(
                 'Login to your Account',
-                style: GoogleFonts.carroisGothic(
+                style: GoogleFonts.daiBannaSil(
                     fontSize: 45,
                     fontWeight: FontWeight.bold,
-                    color: Colors.green[900]),
+                    color: Colors.yellow[900]),
               ),
               const SizedBox(
                 height: 80,
@@ -30,7 +30,7 @@ class LoginView extends StatelessWidget {
                   decoration: InputDecoration(
                       fillColor: Colors.white,
                       hintText: 'Email',
-                      hintStyle: GoogleFonts.carroisGothic(
+                      hintStyle: GoogleFonts.daiBannaSil(
                           color: Colors.grey, fontSize: 15),
                       prefixIcon: Icon(
                         Icons.mail_outline_outlined,
@@ -74,13 +74,13 @@ class LoginView extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Checkbox(
-                    activeColor: Colors.green,
+                    activeColor: Colors.yellow,
                     value: false,
                     onChanged: (value) {},
                   ),
                   Text(
                     'Remember me',
-                    style: GoogleFonts.carroisGothic(
+                    style: GoogleFonts.daiBannaSil(
                       fontSize: 13,
                     ),
                   ),
@@ -96,7 +96,7 @@ class LoginView extends StatelessWidget {
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
                       elevation: 10,
-                      backgroundColor: Colors.green,
+                      backgroundColor: Colors.yellow,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5))),
                   child: const Text(
@@ -111,7 +111,7 @@ class LoginView extends StatelessWidget {
               const Center(
                 child: Text(
                   'Forgot the password',
-                  style: TextStyle(color: Colors.green, fontSize: 17),
+                  style: TextStyle(color: Colors.yellow, fontSize: 17),
                 ),
               ),
               const Spacer(),
@@ -127,7 +127,7 @@ class LoginView extends StatelessWidget {
                   ),
                   Text(
                     'Sign up',
-                    style: TextStyle(color: Colors.green),
+                    style: TextStyle(color: Colors.yellow),
                   )
                 ],
               )
