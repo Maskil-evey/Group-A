@@ -7,7 +7,7 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[50],
+      backgroundColor: Colors.yellow[50],
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(
@@ -16,10 +16,10 @@ class LoginView extends StatelessWidget {
             children: [
               Text(
                 'Login to your Account',
-                style: GoogleFonts.carroisGothic(
+                style: GoogleFonts.damion(
                     fontSize: 45,
                     fontWeight: FontWeight.bold,
-                    color: Colors.green[900]),
+                    color: Colors.yellow[900]),
               ),
               const SizedBox(
                 height: 80,
@@ -54,6 +54,7 @@ class LoginView extends StatelessWidget {
                       hintStyle: GoogleFonts.carroisGothic(
                           color: Colors.grey, fontSize: 15),
                       prefixIcon: const Icon(
+                 
                         Icons.lock_outline,
                         color: Colors.grey,
                       ),
