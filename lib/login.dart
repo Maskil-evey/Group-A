@@ -7,7 +7,7 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[50],
+      backgroundColor: Colors.blue[50],
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(
@@ -16,10 +16,10 @@ class LoginView extends StatelessWidget {
             children: [
               Text(
                 'Login to your Account',
-                style: GoogleFonts.carroisGothic(
+                style: GoogleFonts.cagliostro(
                     fontSize: 45,
                     fontWeight: FontWeight.bold,
-                    color: Colors.green[900]),
+                    color: Colors.pink[900]),
               ),
               const SizedBox(
                 height: 80,
@@ -74,7 +74,7 @@ class LoginView extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Checkbox(
-                    activeColor: Colors.green,
+                    activeColor: Colors.pink,
                     value: false,
                     onChanged: (value) {},
                   ),
@@ -96,7 +96,7 @@ class LoginView extends StatelessWidget {
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
                       elevation: 10,
-                      backgroundColor: Colors.green,
+                      backgroundColor: Colors.pink,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5))),
                   child: const Text(
@@ -111,7 +111,7 @@ class LoginView extends StatelessWidget {
               const Center(
                 child: Text(
                   'Forgot the password',
-                  style: TextStyle(color: Colors.green, fontSize: 17),
+                  style: TextStyle(color: Colors.pink, fontSize: 17),
                 ),
               ),
               const Spacer(),
@@ -127,7 +127,7 @@ class LoginView extends StatelessWidget {
                   ),
                   Text(
                     'Sign up',
-                    style: TextStyle(color: Colors.green),
+                    style: TextStyle(color: Colors.pink),
                   )
                 ],
               )
