@@ -16,7 +16,8 @@ class LoginView extends StatelessWidget {
             children: [
               Text(
                 'Login to your Account',
-                style: GoogleFonts.carroisGothic(
+                // I Made changes on the text//
+                style: GoogleFonts.dekko(
                     fontSize: 45,
                     fontWeight: FontWeight.bold,
                     color: Colors.green[900]),
